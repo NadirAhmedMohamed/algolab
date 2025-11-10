@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithms</title>
+   	<link rel="stylesheet" type="text/css"
+	href="style.css">
+</head>
+<body> 
+    
+  <!-- LOADER -->
+ <div class="loader">
+     <div class="loader-icon">
+       <div class="spinner"></div>
+     </div>
+     <div class="loader-text">Loading...</div>
+  </div>
+  <!-- LOADER -->
+             
+  <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="close-icon-cont">
+           <div class="close-icon">
+           <span class="child"></span>
+<span class="child"></span> 
+           </div>   
+        </div>
+       <div class="headline">Explains for DSs</div>
+       <div class="DS-cont">
+           <div>Array</div>
+           <div>Linked List</div>
+           <div>Stack</div>
+           <div>Queue</div>
+           <div>SOON....</div>
+       </div>
+    </div>  
+  <!-- SIDEBAR -->
+
+  <!-- ANIMATION ARROW -->
+ <div class="to-down heartbeat"><span class="down-arrow"></span>
+</div>
+  <!-- ANIMATION ARROW -->
+
+   <!--  ERROR MESSAGE -->
+     <div class="error-msg">
+        please enter correct number !
+     </div>
+   <!--  ERROR MESSAGE -->
+
+  <!-- HEADER -->
+   <header> 
+   <a href="index.html" >Nader.Dev</a>  
+      <button class="burger-icon">
+         <span></span>
+         <span></span>
+         <span></span>
+     </button>     
+   </header>
+ <!-- HEADER -->
+    
+ <!-- HEROSECTION -->
+  <div class="hero-section">  
+       <div class="box"> 
+          <div>welcome....</div>
+          <div>Enjoy in using </div>
+   </div>   
+  </div>
+ <!-- HEROSECTION -->
+
+<!-- DIVIDER -->
+  <div
+  class="divider">
+ 
+  </div> 
+<!-- DIVIDER -->
+
+<!-- MAIN MENU -->
+  <div class="algorithms">
+      
+      <div class="cont">
+     <div class="headline">Main Menu</div>
+          
+        <div class="array options">1. Array</div>
+         <div class="linked options">2. Linked List</div>   
+         <div class="stack options">3. Stack</div>
+         <div class="queue options">4. Queue</div>
+         <div class="cq options">5. Circular Queue</div>
+         <div class="tr options">6. Tree</div> 
+         <div class="exit opt options">7. Exit</div>
+          
+         <div class="userinp">
+            <div class="do">please enter number for data structure , or 7 to Exit :</div>
+            <div class="btnsend">
+              
+                  <input type="number" placeholder="enter number">
+            <button
+            class="send">send</button>                  
+            </div>
+         </div>  
+      </div>
+  </div>
+<!-- MAIN MENU -->
+
+<!-- ARR MENU -->
+   <div
+       class="arr-list-cont">
+       <div class="headline">Array</div> 
+    <div class="array-list">
+      <div class="options">1. Searching</div> 
+      <div class="options">2. Sorting</div>
+        <div class="return options">3. Return To Main Menue</div>
+    </div>  
+       
+         <div class="arruserinp">
+           <div class="do">please enter number for algorithm , or 3 to return to main menu :</div>
+           
+           <div class="btn-and-send">                
+            <input type="number" placeholder="enter number">
+           <button
+          class="send">send</button>       
+           </div>
+       
+       </div>
+ </div>
+<!-- ARR MENU -->
+
+<!-- SEARCH MENU -->
+ <div
+       class="search-menu">
+       <div class="headline">searching</div> 
+    <div class="search-list">
+      <div class="options">1. linearSearch</div> 
+      <div class="options">2. binarySearch</div>
+        <div class="return options">3. Return To back</div>
+    </div>  
+       
+         <div class="arruserinp">
+           <div class="do">please enter number for algorithm , or 3 to return back :</div>
+              <div class="btn-and-send">    
+                  
+                <input type="number" placeholder="enter number">
+              <button class="send">send</button>       
+            </div>       
+        </div>
+ </div>
+<!-- SEARCH MENU -->
+
+<!-- SEARCHING FORM -->
+  <form class="searching-form" >
+
+  <label for="arraySize">please enter size of array :</label> 
+  <input class="arraySize" type="number" placeholder="enter size of array" required />
+
+  <div class="search-arrayInputs"></div>
+
+  <label for="targetValue">please enter target element to search :</label> 
+  <input class="targetValue" type="number" placeholder="enter element to search" required/>
+
+  <button class="send" type="submit">search</button> 
+  </form>
+<!-- SEARCHING FORM -->
+
+<!-- SORT MENU -->
+ <div
+       class="sort-menu">
+       <div class="headline">Sorting</div> 
+    <div class="sort-list">
+      <div class="options">1. Selection sort</div> 
+      <div class="options">2. Buble sort</div>
+      <div class="options">3. Insertion sort</div>
+      <div class="options">4. Quick sort</div>
+        <div class="return options">5. Return To back</div>
+    </div>  
+       
+         <div class="arruserinp">
+           <div class="do">please enter number of algorithm , Or 5 To Return to b.ack :</div>
+           
+           <div class="btn-and-send">    
+                              
+            <input type="number" placeholder="enter number">
+           <button
+          class="send">send</button>       
+           </div>
+       
+       </div>
+ </div>
+<!-- SORT MENU -->
+
+<!-- SORTING FORM -->
+<form class="sorting-form" >
+    
+ <label for="arraySize">please enter size of array :</label>
+    
+ <input class="arraySize" type="number" placeholder="enter size of array" required />
+ 
+<div class="arrayInputs"></div>
+ 
+<button class="send" type="submit">sort</button> 
+</form>
+<!-- SORTING FORM -->
+
+<!-- SEARCHING COMPLETE  -->
+ <div class="searched-complete">
+      <div class="result">
+            <div class="R">result : </div>
+          <span></span>
+      </div>
+        <hr/>
+  <div class="Question">
+      <div class="msg">Do You Want To Reusing ?</div>
+      <div class="yes-no-btns">
+        <button class="no">No</button>
+        <a href="index.html"><button class="yes">Yes</button></a>
+        
+      </div>
+  </div>
+ </div>
+<!-- SEARCHING COMPLETE  -->
+
+<!-- SORTING COMPLETE -->
+ <div class="sorting-complete">
+      <div class="result">
+          <div class="word "> result :</div>
+          <span></span>
+      </div>
+      <hr/>
+  <div class="Question">
+      <div class="msg">Do You Want To Reusing ?</div>
+      <div class="yes-no-btns">
+        <button class="no">No</button>
+        <a href="index.html"><button class="yes">Yes</button></a>
+        
+      </div>
+  </div>   
+ </div>
+<!-- SORTING COMPLETE -->
+
+<!-- LINKEDLIST MENU -->
+  <div class="linkedList-menu">
+      <div class="headline">linked List</div>
+      <div class="text-result">result :</div>
+    <div class="linked-result">
+       
+    </div> 
+     
+        <input id="linked-valueInput" type="number" placeholder="enter value" required/>
+        <input id="linked-positionInput" type="number" placeholder="enter position" required/>  
+     
+    <div class="operations">      
+         <button class="add-first options">Add First</button>       
+         <button class="add-last options">Add Last</button>                 
+          <button class="add-at-pos options">Add At position</button>       
+          <button class="delete-first options">Delete First</button>           
+          <button class="delete-last options">Delete Last</button>           
+          <button class="delete-by-value options">Delete By Value</button>     
+        <button class="linked-return options">Return To Main Menu</button>    
+                   
+  </div>
+</div>
+<!-- LINKEDLIST MENU -->
+
+<!-- STACK MENU -->
+ <div class="stack-menu">
+      <div class="headline">stack</div>
+      
+       <div class="stack-max">
+          <div>note : max size of stack is 5</div>
+      </div>
+      
+       <div class="text-result">result :</div>
+    <div class="stack-result">
+       
+    </div> 
+     
+     <div class="peek-result">
+         <div class="peek-text">peek is :</div>
+         <div class="peek-value"></div>
+     </div>
+     
+       <input id="stack-valueInput" type="number" placeholder="enter value" required/>
+       
+             
+    <div class="operations">      
+         <button class="push options">Push</button>       
+         <button class="pop options">Pop</button>                 
+          <button class="peek options">Peek</button>
+            <button class="stack-return options">Return To Main Menu</button>           
+  </div>
+</div>
+<!-- STACK MENU -->
+
+<!-- QUEUE MENU -->
+ <div class="queue-menu">
+      <div class="headline">QUEUE</div>
+      
+      <div class="queue-max">
+          <div>note : max size of queue is 5</div>
+      </div>
+      
+       <div class="text-result">result :</div>
+    <div class="queue-result">
+       
+    </div> 
+     
+     <div class="queue-peek-result">
+         <div class="queue-text">peek is :</div>
+         <div class="queue-peek-value"></div>
+     </div>
+     
+   
+       <input id="queue-valueInput" type="number" placeholder="enter value" required/>
+     
+             
+    <div class="operations">      
+         <button class="enqueue options">Enqueue</button>       
+         <button class="dequeue options">Dequeue</button>                 
+          <button class="queue-peek options">Peek</button>
+          <button class="queue-return options">Return To Main Menu</button>             
+  </div>
+</div>
+<!-- QUEUE MENU -->
+
+ <!-- CQ MENU -->
+ <div class="cq-menu">
+      <div class="headline">CIRCULAR QUEUE</div>
+      
+      <div class="cq-max">
+          <div>note : max size of circular queue is 5</div>
+      </div>
+       
+       <div class="text-result">result :</div>
+    <div class="cq-result">
+       
+    </div> 
+     
+     <div class="cq-peek-result">
+         <div class="cq-text">peek is :</div>
+         <div class="cq-peek-value"></div>
+     </div>
+     
+       <input id="cq-valueInput" type="number" placeholder="enter value" required/>
+       
+             
+    <div class="operations">      
+         <button class="cq-enqueue options">Enqueue</button>       
+         <button class="cq-dequeue options">Dequeue</button>                 
+          <button class="cq-peek options">peek</button>
+           <button class="cq-return options">Return To Main Menu</button>            
+  </div>
+</div>
+ <!-- CQ MENU -->
+
+<!-- TREE -->
+  <div class="tree">  
+               
+      <div class="img-cont"><img src="tree.jpg" alt=""></div>
+       
+      <div class="def-cont">    <div class="strong"><mark>definition :</mark></div>
+      <p>is non linear abstract datatype that stores elements in hierarchy.</p>
+     </div>
+     
+       <div class="examples">
+            <div class="strong"><mark>examples in real life :</mark></div>
+    <ul>
+        <li>family tree.</li>
+        <li>table of contents of a book.</li>
+        <li>decisions trees.</li>
+    </ul>
+     </div>
+     
+     <div class="terminologies">
+            <div class="strong">tree terminologies :</div>
+    <ul>
+        <li><mark>node :</mark></li>
+        <p>- each data item in a tree.</p>
+        <li><mark>root :</mark></li>
+         <p>- distinguished element that is the origin of the tree(first node in tree).</p>
+        <li><mark>edge :</mark></li>
+        <p>- connections between nodes.</p>
+        <li><mark>parent :</mark></li>
+        <p>- single node that directly precedes a node.</p>
+        <li><mark>child :</mark></li>
+        <p>- one or more nodes that directly follow a node.</p>
+     <li><mark>degree of node :</mark></li>
+        <p>- is the number of sub trees of a node.</p> 
+         <li><mark>degree of tree :</mark></li>
+        <p>- is the maximum degree of node in a given tree.</p>    
+     <li><mark>leaf node(terminal node) :</mark></li>
+        <p>- a node with degree 0.</p>    
+        <li><mark>depth of tree(height of tree) :</mark></li>
+        <p>- is the maximum level of any node in a given tree.</p>        
+    </ul>
+     </div>
+     
+       <div class="def-binaty-cont">    <div class="strong"><mark>binary tree :</mark></div>
+      <p>an ordered tree with at most two children for each node.</p>
+     </div>   
+      
+     <img class="img-bin" src="binary-tree.png" alt="">
+         
+      <button class="tree-return">Return to main menu</button> 
+         
+  </div>
+<!-- TREE -->
+
+<!-- EXIT MESSAGE -->
+  <div class="exit-message">
+      Thank you for your visiting , i wish you enjoy in using (:
+  </div>
+<!-- EXIT MESSAGE -->
+
+<!-- FOOTER -->
+  <footer>
+     &copy; created by nadir ahmed <span class="year"></span>
+  </footer>
+<!-- FOOTER -->
+
+
+  <script src="main.js"></script>
+</body>
+</html>
