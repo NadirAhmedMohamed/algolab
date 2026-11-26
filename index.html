@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#6366F1" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>AlgoLab | Explore. Understand. Visualize.</title>
+  </head>
+
+  <body>
+    <!-- LOADER -->
+    <div class="loader">
+      <div class="loader-icon">
+        <div class="spinner"></div>
+      </div>
+      <div class="loader-text">Loading...</div>
+    </div>
+    <!-- LOADER -->
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="close-icon-cont">
+        <div class="close-icon">
+          <span class="child"></span>
+          <span class="child"></span>
+        </div>
+      </div>
+
+      <div class="headline">Explore Data Structures</div>
+
+      <div class="DS-cont">
+        <div>Array</div>
+        <div>Linked List</div>
+        <div>Stack</div>
+        <div>Queue</div>
+        <div>Coming Soon...</div>
+      </div>
+    </div>
+    <!-- SIDEBAR -->
+
+    <!-- ANIMATION ARROW -->
+    <div class="to-down heartbeat">
+      <span class="down-arrow"></span>
+    </div>
+    <!-- ANIMATION ARROW -->
+
+    <!-- ERROR MESSAGE -->
+    <div class="error-msg">Please enter a correct number!</div>
+    <!-- ERROR MESSAGE -->
+
+    <!-- HEADER -->
+    <header>
+      <a href="index.html">AlgoLab</a>
+
+      <button class="burger-icon" type="button" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <!-- HEADER -->
+
+    <!-- HERO SECTION -->
+    <div class="hero-section">
+      <div class="box">
+        <div>Welcome to AlgoLab</div>
+        <div>Explore. Understand. Visualize.</div>
+      </div>
+    </div>
+    <!-- HERO SECTION -->
+
+    <!-- DIVIDER -->
+    <div class="divider"></div>
+    <!-- DIVIDER -->
+
+    <!-- MAIN MENU -->
+    <div class="algorithms">
+      <div class="cont">
+        <div class="headline">Main Menu</div>
+
+        <div class="menu-options">
+          <button type="button" class="array options">1. Array</button>
+
+          <button type="button" class="linked options">2. Linked List</button>
+
+          <button type="button" class="stack options">3. Stack</button>
+
+          <button type="button" class="queue options">4. Queue</button>
+
+          <button type="button" class="cq options">5. Circular Queue</button>
+
+          <button type="button" class="tr options">6. Tree</button>
+
+          <button type="button" class="exit opt options">7. Exit</button>
+        </div>
+      </div>
+    </div>
+    <!-- MAIN MENU -->
+
+    <!-- ARRAY MENU -->
+    <div class="arr-list-cont">
+      <div class="headline">Array</div>
+
+      <div class="array-list">
+        <button type="button" class="options">Searching</button>
+
+        <button type="button" class="options">Sorting</button>
+
+        <button type="button" class="return options">
+          Return To Main Menu
+        </button>
+      </div>
+    </div>
+    <!-- ARRAY MENU -->
+
+    <!-- SEARCH MENU -->
+    <div class="search-menu">
+      <div class="headline">Searching Algorithms</div>
+
+      <div class="search-list">
+        <button type="button" class="options">Linear Search</button>
+
+        <button type="button" class="options">Binary Search</button>
+
+        <button type="button" class="return options">
+          Return To Array Menu
+        </button>
+      </div>
+    </div>
+    <!-- SEARCH MENU -->
+
+    <!-- SEARCHING FORM -->
+    <form class="searching-form">
+      <label for="arraySize-search"> Please enter size of array: </label>
+
+      <input
+        id="arraySize-search"
+        class="arraySize"
+        type="number"
+        placeholder="Enter size of array"
+        required
+      />
+
+      <div class="search-arrayInputs"></div>
+
+      <label for="targetValue"> Please enter target element to search: </label>
+
+      <input
+        id="targetValue"
+        class="targetValue"
+        type="number"
+        placeholder="Enter element to search"
+        required
+      />
+
+      <button class="send" type="submit">Search</button>
+    </form>
+    <!-- SEARCHING FORM -->
+
+    <!-- SORT MENU -->
+    <div class="sort-menu">
+      <div class="headline">Sorting Algorithms</div>
+
+      <div class="sort-list">
+        <button type="button" class="options">Selection Sort</button>
+
+        <button type="button" class="options">Bubble Sort</button>
+
+        <button type="button" class="options">Insertion Sort</button>
+
+        <button type="button" class="options">Quick Sort</button>
+
+        <button type="button" class="return options">
+          Return To Array Menu
+        </button>
+      </div>
+    </div>
+    <!-- SORT MENU -->
+
+    <!-- SORTING FORM -->
+    <form class="sorting-form">
+      <label for="arraySize-sort"> Please enter size of array: </label>
+
+      <input
+        id="arraySize-sort"
+        class="arraySize"
+        type="number"
+        placeholder="Enter size of array"
+        required
+      />
+
+      <div class="arrayInputs"></div>
+
+      <button class="send" type="submit">Sort</button>
+    </form>
+    <!-- SORTING FORM -->
+
+    <!-- SEARCHING COMPLETE -->
+    <div class="searched-complete">
+      <div class="result">
+        <div class="R">Result:</div>
+        <span></span>
+      </div>
+
+      <hr />
+
+      <div class="Question">
+        <div class="msg">Do You Want To Reuse?</div>
+
+        <div class="yes-no-btns">
+          <button class="no" type="button">No</button>
+
+          <button class="yes" type="button">Yes</button>
+        </div>
+      </div>
+    </div>
+    <!-- SEARCHING COMPLETE -->
+
+    <!-- SORTING COMPLETE -->
+    <div class="sorting-complete">
+      <div class="result">
+        <div class="word">Result:</div>
+        <span></span>
+      </div>
+
+      <hr />
+
+      <div class="Question">
+        <div class="msg">Do You Want To Reuse?</div>
+
+        <div class="yes-no-btns">
+          <button class="no" type="button">No</button>
+
+          <button class="yes" type="button">Yes</button>
+        </div>
+      </div>
+    </div>
+    <!-- SORTING COMPLETE -->
+
+    <!-- LINKED LIST MENU -->
+    <div class="linkedList-menu">
+      <div class="headline">Linked List</div>
+
+      <div class="text-result">Result:</div>
+
+      <div class="linked-result"></div>
+
+      <input id="linked-valueInput" type="number" placeholder="Enter value" />
+
+      <input
+        id="linked-positionInput"
+        type="number"
+        placeholder="Enter position"
+      />
+
+      <div class="operations">
+        <button type="button" class="add-first options">Add First</button>
+
+        <button type="button" class="add-last options">Add Last</button>
+
+        <button type="button" class="add-at-pos options">
+          Add At Position
+        </button>
+
+        <button type="button" class="delete-first options">Delete First</button>
+
+        <button type="button" class="delete-last options">Delete Last</button>
+
+        <button type="button" class="delete-by-value options">
+          Delete By Value
+        </button>
+
+        <button type="button" class="linked-return options">
+          Return To Main Menu
+        </button>
+      </div>
+    </div>
+    <!-- LINKED LIST MENU -->
+
+    <!-- STACK MENU -->
+    <div class="stack-menu">
+      <div class="headline">Stack</div>
+
+      <div class="stack-max">
+        <div>Note: Maximum size of stack is 5</div>
+      </div>
+
+      <div class="text-result">Result:</div>
+
+      <div class="stack-result"></div>
+
+      <div class="peek-result">
+        <div class="peek-text">Peek Is:</div>
+        <div class="peek-value"></div>
+      </div>
+
+      <input id="stack-valueInput" type="number" placeholder="Enter value" />
+
+      <div class="operations">
+        <button type="button" class="push options">Push</button>
+
+        <button type="button" class="pop options">Pop</button>
+
+        <button type="button" class="peek options">Peek</button>
+
+        <button type="button" class="stack-return options">
+          Return To Main Menu
+        </button>
+      </div>
+    </div>
+    <!-- STACK MENU -->
+
+    <!-- QUEUE MENU -->
+    <div class="queue-menu">
+      <div class="headline">Queue</div>
+
+      <div class="queue-max">
+        <div>Note: Maximum size of queue is 5</div>
+      </div>
+
+      <div class="text-result">Result:</div>
+
+      <div class="queue-result"></div>
+
+      <div class="queue-peek-result">
+        <div class="queue-text">Peek Is:</div>
+        <div class="queue-peek-value"></div>
+      </div>
+
+      <input id="queue-valueInput" type="number" placeholder="Enter value" />
+
+      <div class="operations">
+        <button type="button" class="enqueue options">Enqueue</button>
+
+        <button type="button" class="dequeue options">Dequeue</button>
+
+        <button type="button" class="queue-peek options">Peek</button>
+
+        <button type="button" class="queue-return options">
+          Return To Main Menu
+        </button>
+      </div>
+    </div>
+    <!-- QUEUE MENU -->
+
+    <!-- CIRCULAR QUEUE MENU -->
+    <div class="cq-menu">
+      <div class="headline">Circular Queue</div>
+
+      <div class="cq-max">
+        <div>Note: Maximum size of circular queue is 5</div>
+      </div>
+
+      <div class="text-result">Result:</div>
+
+      <div class="cq-result"></div>
+
+      <div class="cq-peek-result">
+        <div class="cq-text">Peek Is:</div>
+        <div class="cq-peek-value"></div>
+      </div>
+
+      <input id="cq-valueInput" type="number" placeholder="Enter value" />
+
+      <div class="operations">
+        <button type="button" class="cq-enqueue options">Enqueue</button>
+
+        <button type="button" class="cq-dequeue options">Dequeue</button>
+
+        <button type="button" class="cq-peek options">Peek</button>
+
+        <button type="button" class="cq-return options">
+          Return To Main Menu
+        </button>
+      </div>
+    </div>
+    <!-- CIRCULAR QUEUE MENU -->
+
+    <!-- TREE -->
+    <div class="tree">
+      <div class="img-cont">
+        <img src="imgs/tree.jpg" alt="Tree data structure" />
+      </div>
+
+      <div class="def-cont">
+        <div class="strong">
+          <mark>Definition:</mark>
+        </div>
+
+        <p>
+          A non-linear abstract data type that stores elements in a hierarchy.
+        </p>
+      </div>
+
+      <div class="examples">
+        <div class="strong">
+          <mark>Examples in real life:</mark>
+        </div>
+
+        <ul>
+          <li>Family tree.</li>
+          <li>Table of contents of a book.</li>
+          <li>Decision trees.</li>
+        </ul>
+      </div>
+
+      <div class="terminologies">
+        <div class="strong">Tree Terminologies:</div>
+
+        <ul>
+          <li><mark>Node:</mark></li>
+          <p>- Each data item in a tree.</p>
+
+          <li><mark>Root:</mark></li>
+          <p>
+            - The distinguished element that is the origin of the tree (first
+            node in the tree).
+          </p>
+
+          <li><mark>Edge:</mark></li>
+          <p>- Connections between nodes.</p>
+
+          <li><mark>Parent:</mark></li>
+          <p>- A single node that directly precedes another node.</p>
+
+          <li><mark>Child:</mark></li>
+          <p>- One or more nodes that directly follow a node.</p>
+
+          <li><mark>Degree of Node:</mark></li>
+          <p>- The number of subtrees of a node.</p>
+
+          <li><mark>Degree of Tree:</mark></li>
+          <p>- The maximum degree of a node in a given tree.</p>
+
+          <li><mark>Leaf Node (Terminal Node):</mark></li>
+          <p>- A node with degree 0.</p>
+
+          <li><mark>Depth of Tree (Height of Tree):</mark></li>
+          <p>- The maximum level of any node in a given tree.</p>
+        </ul>
+      </div>
+
+      <div class="def-binaty-cont">
+        <div class="strong">
+          <mark>Binary Tree:</mark>
+        </div>
+
+        <p>An ordered tree with at most two children for each node.</p>
+      </div>
+
+      <img
+        class="img-bin"
+        src="imgs/binary-tree.png"
+        alt="Binary tree illustration"
+      />
+
+      <button type="button" class="tree-return">Return To Main Menu</button>
+    </div>
+    <!-- TREE -->
+
+    <!-- EXIT MESSAGE -->
+    <div class="exit-message">
+      Thank you for visiting AlgoLab. We hope you enjoyed exploring!
+    </div>
+    <!-- EXIT MESSAGE -->
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">AlgoLab<span>.</span></a>
+          <p>Explore. Understand. Visualize.</p>
+          <p class="footer-description">
+            An interactive learning space for algorithms and data structures.
+          </p>
+        </div>
+
+        <div class="footer-developer">
+          <h3>Designed & Developed by</h3>
+          <a
+            href="https://portfolio-nadirahmed.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="developer-name"
+          >
+            Nadir Ahmed
+          </a>
+          <p>Software Engineer | Frontend Developer</p>
+        </div>
+
+        <div class="footer-social">
+          <h3>Connect With Me</h3>
+
+          <div class="social-links">
+            <a
+              href="https://github.com/NadirAhmedMohamed"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/nadirahmed10/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              href="https://portfolio-nadirahmed.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Portfolio"
+            >
+              Portfolio
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span class="year"></span> AlgoLab. All rights reserved.</p>
+
+        <p>Built with passion for learning and innovation.</p>
+      </div>
+    </footer>
+    <!-- FOOTER -->
+
+    <!-- JAVASCRIPT -->
+    <script src="main.js"></script>
+  </body>
+</html>
